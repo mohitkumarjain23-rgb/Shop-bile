@@ -46,7 +46,8 @@ jobs:
     gradle assembleDebug --no-daemon
 
       - name: Upload APK
-  uses: actions/upload-artifact@v4
-  with:
-    name: ShopItemRate-debug-apk
-    path: project/ShopItemRateApp/app/build/outputs/apk/debug/*.apk
+        uses: actions/upload-artifact@v4
+        with:
+        name: ShopItemRate-debug-apk
+        path: project/ShopItemRateApp/app/build/outputs/apk/debug/*.apk
+  
