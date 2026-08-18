@@ -41,9 +41,9 @@ jobs:
           find project -maxdepth 3 -type f | head -50
 
       - name: Build APK
-        working-directory: project
+       working-directory: project/ShopItemRateApp
         run: |
-          gradle assembleDebug --no-daemon
+    gradle assembleDebug --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
